@@ -19,7 +19,8 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'gradient-start': '#FF8938',
+                        'gradient-end': '#F00',
                     }
                 }
             }
@@ -28,7 +29,12 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        .font-manrope {
+        /* .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        } */
+        * {
+            margin: 0;
+            padding: 0;
             font-family: 'Manrope', sans-serif;
         }
     </style>
@@ -44,7 +50,7 @@
                         Tea House</h1>
                     <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end">Explore More</button>
                 </div>
                 <div>
                     <img src="./images/banner.png" class="max-w-sm" />
@@ -130,7 +136,7 @@
         </section>
         <!-- super client section -->
         <section
-            class="my-24 gap-12 rounded-xl bg-gradient-to-r from-[#F00] to-[#FF8938] px-16 py-24 flex flex-col lg:flex-row">
+            class="my-24 gap-12 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-24 flex flex-col lg:flex-row">
             <div class="flex items-center lg:pr-28">
                 <div class="space-y-5">
                     <h2 class="text-5xl font-extrabold text-white">Meet Our Super <br> Clients</h2>
@@ -138,7 +144,7 @@
                         outstanding. Packaging
                         elegant. Swift delivery. A delightful experience. Recommending to friends. A must-try for tea
                         connoisseurs.</p>
-                    <button class="btn btn-primary">Show All</button>
+                    <button class="btn text-orange-500 font-extrabold">Show All</button>
                 </div>
             </div>
             <!-- review container -->
@@ -184,42 +190,89 @@
         <!-- news and events section -->
         <section>
             <h3 class="text-5xl font-extrabold mb-3 text-center">News & Events</h3>
-            <p class="text-[#777] text-center">Exciting updates in the world of tea! New blends unveiled, events brewing. Stay informed, savor the latest news, and experience tea's evolving story.</p>
+            <p class="text-[#777] text-center">Exciting updates in the world of tea! New blends unveiled, events
+                brewing. Stay informed, savor the latest news, and experience tea's evolving story.</p>
             <!-- card -->
             <div class="py-20 flex flex-col lg:flex-row gap-6 justify-center border-gray-100 rounded-xl">
-              <!-- first card -->
-              <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="./images/news-1.png" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="font-extrabold text-xl">Collecting 8 points for <br> discount</h2>
-                  <p>Soothing, aromatic, diverse blends—tea comforts and uplifts daily routines effortlessly.<p>
-                 <p class="text-xl font-bold">Learn More</p>
+                <!-- first card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/news-1.png" alt="" /></figure>
+                    <div class="card-body">
+                        <h2 class="font-extrabold text-xl">Collecting 8 points for <br> discount</h2>
+                        <p>Soothing, aromatic, diverse blends—tea comforts and uplifts daily routines effortlessly.
+                        <p>
+                        <p class="text-xl font-bold">Learn More</p>
+                    </div>
                 </div>
-              </div>
-              <!-- second card -->
-              <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="./images/news-2.png" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="font-extrabold text-xl">Collecting 8 points for <br> discount</h2>
-                  <p>Soothing, aromatic, diverse blends—tea comforts and uplifts daily routines effortlessly.<p>
-                 <p class="text-xl font-bold">Learn More</p>
+                <!-- second card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/news-2.png" alt="" /></figure>
+                    <div class="card-body">
+                        <h2 class="font-extrabold text-xl">Collecting 8 points for <br> discount</h2>
+                        <p>Soothing, aromatic, diverse blends—tea comforts and uplifts daily routines effortlessly.
+                        <p>
+                        <p class="text-xl font-bold">Learn More</p>
+                    </div>
                 </div>
-              </div>
-              <!-- third card -->
-              <div class="card w-96 bg-base-100 shadow-xl">
-                <figure><img src="./images/news-3.png" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="font-extrabold text-xl">Collecting 8 points for <br> discount</h2>
-                  <p>Soothing, aromatic, diverse blends—tea comforts and uplifts daily routines effortlessly.<p>
-                 <p class="text-xl font-bold">Learn More</p>
+                <!-- third card -->
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img src="./images/news-3.png" alt="" /></figure>
+                    <div class="card-body">
+                        <h2 class="font-extrabold text-xl">Collecting 8 points for <br> discount</h2>
+                        <p>Soothing, aromatic, diverse blends—tea comforts and uplifts daily routines effortlessly.
+                        <p>
+                        <p class="text-xl font-bold">Learn More</p>
+                    </div>
                 </div>
-              </div>
             </div>
         </section>
 
     </body>
-    <footer>
-
+    <footer class=" px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24">
+            <img src="./images/cup.png" alt="">
+            <p>
+                <span>Ready to get started?</span>
+                <button class="btn bg-gradient-to-r from-gradient-start to-gradient-end">Get Started</button>
+            </p>
+        </div>
+    <div class="footer">
+        <nav>
+            <header class="footer-title">Services</header>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Company</header>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <header class="footer-title">Legal</header>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form>
+            <header class="footer-title">Newsletter</header>
+            <fieldset class="form-control w-80">
+                <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                </label>
+                <div class="join">
+                    <input type="text" placeholder="username@site.com" class="py-4 bg-transparent border-b-2 border-black" />
+                    <button class="btn text-white rounded-full bg-gradient-to-r from-gradient-start to-gradient-end"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+        <aside class="mt-10 text-center">
+            <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+        </aside>
     </footer>
 </body>
 
